@@ -1,5 +1,7 @@
 # automating-berlin-termine
 
+Info: this description is in German because the tool concerns german gov. websites. Just use google translate if you don’t understand it.
+
 - Automatisiert das finden von Terminen in den Berliner Behörden!  
 - Sucht nach verfügbaren Terminen und schickt eine email wenn gefunden
 
@@ -48,5 +50,7 @@ npm start -- https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=
 - Das Tool durchsucht die Seite nach einem Freien Termin.
 - Findet es keinen clickt es auf "Versuchen Sie doch den nächsten Monat »." und startet die Suche erneut.
 - Sobald es einen Termin findet **beendet sich das Tool von selbst** und schickt eine E-Mail an alle empfänger aus der config datei (wenn die mails und das password in `config.js` richtig eingetragen wurde).
+
+- Tipp: nutzt ein Tool wie https://ifttt.com/ um automatisch SMS zu versenden falls ihr unterwegs seid!
 
 # Have Fun!
