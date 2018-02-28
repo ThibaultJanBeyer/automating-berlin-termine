@@ -1,0 +1,35 @@
+{
+  "name": "automating-berlin-termine",
+  "version": "1.0.0",
+  "description": "Automatisierung, sucht nach verfügbaren Terminen und schickt eine Nachricht wenn verfügbar (zur Zeit nur Standesamt)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node automate.js",
+    "production": "forever start -w -c babel-node automate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibaultJanBeyer/automating-berlin-termine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibaultJanBeyer/automating-berlin-termine/issues"
+  },
+  "homepage": "https://github.com/ThibaultJanBeyer/automating-berlin-termine#readme",
+  "dependencies": {
+    "es6-promise": "^4.2.4",
+    "forever": "^0.15.3",
+    "isomorphic-fetch": "^2.2.1",
+    "nodemailer": "^4.6.0",
+    "puppeteer": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
