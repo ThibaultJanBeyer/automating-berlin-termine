@@ -1,10 +1,9 @@
 let config = {
-    "sendMail": "ENTER EMAIL ADDRESS OF SENDER HERE",  // <- example foo@bar.baz
     "recieveMails": [
         "ENTER EMAIL ADDRESSES",  // <- example my@mail.com
         "OF RECIPIENTS"  // <- example my@mail.com
     ],
-    "support": {
+    "sender": {
         "host": "smtp.gmail.com",  // <- change hostname as needed
         "port": 465,  // <- change port as needed
         "mail": "ENTER EMAIL ADDRESS OF SENDER HERE TOO",  // <- example foo@bar.baz

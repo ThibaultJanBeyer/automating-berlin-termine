@@ -3,12 +3,12 @@ const config = require('./config');
 
 // create reusable transporter object using the default SMTP transport
 var basicTransporter = nodemailer.createTransport({
-    host: config.support.host,
-    port: config.support.port,
+    host: config.sender.host,
+    port: config.sender.port,
     secure: true, // secure:true for port 465, secure:false for port 587
     auth: {
-        user: config.support.mail,
-        pass: config.support.passw
+        user: config.sender.mail,
+        pass: config.sender.passw
     }
 });
 
@@ -20,7 +20,7 @@ var basicTransporter = nodemailer.createTransport({
 module.exports = function sendFoundMail(website) {
   // setup email data with unicode symbols
   var mailOptions = {
-      from: `"Autobot 🤖" <${config.sendMail}>`, // sender address
+      from: `"Autobot 🤖" <${config.sender.mail}>`, // sender address
       to: config.recieveMails.join(", "), // list of receivers
       subject: `TERMINGEFUNDEN`, // Subject line
       text: `Yuhuuu ein TERMIN wurde GEFUNDEN auf ${website}`, // plain text body
