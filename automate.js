@@ -25,15 +25,10 @@ function start() {
 
   (async () => {
 
-    const width = 800, height = 900;
-    const chrome = { x: 0, y: 74 };   // comes from config in reality
-
-    browser = await puppeteer.launch({headless: false, slowMo: 250,
-        args: [ `--window-size=${ width+chrome.x },${ height+chrome.x }` ]});
+    browser = await puppeteer.launch({headless: true});
     
     const page = await browser.newPage();
     await page.goto(website);
-    page.setViewport({ width, height });
     
     // see https://stackoverflow.com/a/47003069/3712591
     const check = async selector => {
