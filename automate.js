@@ -59,13 +59,13 @@ function start() {
         
             console.log("no appointment found, checking next page :(");
             await page.click( await check(".collapsible-body a:not(*[title])") );
-            setTimeout(() => myself(), 5000);
+            setTimeout(() => myself(), 10000);
         
         } else {
         
             console.log("end of page, try again! :(");
             await page.goto(website);
-            setTimeout(() => myself(), 5000);
+            setTimeout(() => myself(), 15000);
         
         }
 
