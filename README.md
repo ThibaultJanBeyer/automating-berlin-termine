@@ -53,4 +53,8 @@ npm start -- https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=
 
 - Tipp: nutzt ein Tool wie https://ifttt.com/ um automatisch SMS zu versenden falls ihr unterwegs seid!
 
+- Tipp: To run it forever on your server you can use tools like [Forever](https://github.com/foreverjs/forever). Or try `setsid` on ubuntu like so: `setsid npm start -- URL`.
+
 # Have Fun!
+
+![console output](output.png)
